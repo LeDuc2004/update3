@@ -454,7 +454,7 @@ if (email) {
 localStorage.setItem("bothEmail", `${email}${auth.currentUser.email}`)
 localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
 
-model.getChat() 
+ 
 
 
 
@@ -465,7 +465,7 @@ model.getChat()
   }
 }
 
-
+model.getChat()
 
 
 }

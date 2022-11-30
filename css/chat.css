@@ -1263,8 +1263,6 @@ border-radius: 5px;
 
 
 }
-
-
 @media only screen and (max-width:414px){
     #valueInputForm span{
         background-color: white;
