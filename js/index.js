@@ -12,19 +12,11 @@ window.onload = () => {
   firebase
     .firestore()
     .collection("listMessage")
-    .doc()
-    .onSnapshot((doc) => {
+    .onSnapshot((docs) => {
+
       model.getChat()
      
     });
-  // firebase
-  //   .firestore()
-  //   .collection("listMessage")
-  //   .doc(`${localStorage.getItem("bothEmailReverse")}`)
-  //   .onSnapshot((doc) => {
-  //     view.renderList(doc.data().message);
-  //   });
-
   firebase
     .firestore()
     .collection("idName")
