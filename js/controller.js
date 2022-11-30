@@ -444,7 +444,7 @@ function blueborder() {
   });
 }
 function takeInfoObj(email, i) {
-if (email) {
+
     let getfriend = document.querySelectorAll(".friend");
   getfriend.forEach((item) => {
     item.setAttribute("style", "background-color:");
@@ -454,7 +454,7 @@ if (email) {
 localStorage.setItem("bothEmail", `${email}${auth.currentUser.email}`)
 localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
 
- 
+model.getChat() 
 
 
 
@@ -465,11 +465,11 @@ localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
   }
 }
 
-model.getChat()
 
 
-}
-setInterval(takeInfoObj,500)
+
+
+
 
 
 $(window).resize(function(){

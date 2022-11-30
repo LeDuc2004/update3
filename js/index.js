@@ -12,17 +12,18 @@ window.onload = () => {
   firebase
     .firestore()
     .collection("listMessage")
-    .doc(`${localStorage.getItem("bothEmail")}`)
+    .doc()
     .onSnapshot((doc) => {
-      view.renderList(doc.data().message);
+      model.getChat()
+     
     });
-  firebase
-    .firestore()
-    .collection("listMessage")
-    .doc(`${localStorage.getItem("bothEmailReverse")}`)
-    .onSnapshot((doc) => {
-      view.renderList(doc.data().message);
-    });
+  // firebase
+  //   .firestore()
+  //   .collection("listMessage")
+  //   .doc(`${localStorage.getItem("bothEmailReverse")}`)
+  //   .onSnapshot((doc) => {
+  //     view.renderList(doc.data().message);
+  //   });
 
   firebase
     .firestore()
