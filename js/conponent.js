@@ -160,7 +160,7 @@ conponent.wellcomePage = `
         <div id="table1" style="display:block" onclick="clickevw()">
           <div id="title" style="display: flex;">
           <div id="arowleft" onclick="arowleft()"><i class="fa-solid fa-arrow-left"></i></div>
-          <div class="avatar"  style="width:48px;height:48px;margin-left: 12px;margin-bottom: 20px;margin-top:1vh"></div>
+          <div class="avatar"></div>
           <div id="baoten">
           <div id="namechati" style="display:flex;justify-self:end ;margin-left:2px;font-weight: 500;"></div>
           <div id="emailchati" style="margin-top: 5px;font-size: 15px"></div>
