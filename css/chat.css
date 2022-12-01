@@ -1396,7 +1396,9 @@ border-radius: 5px;
     
     
     }
-
+#addFriend i{
+ color: #fff;
+}
     #addFriend{
     
         position:relative;

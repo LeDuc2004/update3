@@ -503,6 +503,23 @@ function arowleft() {
   document.getElementById("divlistban").style.display =""
 
 }
+document.addEventListener("history.back()",(e)=>{
+  e.preventDefault()
+  document.getElementById("table1").style.display ="none"
+  document.getElementById("divlistban").style.display =""
+})
+document.addEventListener("keydown", (e) => {
+console.log(e.which);
+
+    });
+    document.addEventListener("keydown", (e) => {
+      if(e.which == 27){
+        e.preventDefault()
+        document.getElementById("table1").style.display ="none"
+        document.getElementById("divlistban").style.display =""
+      }
+    
+        });
 
 
 
