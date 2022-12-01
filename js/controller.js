@@ -498,6 +498,11 @@ function okchat() {
   document.getElementById("taikhoan").style.display = "none"
  }
 }
+function arowleft() {
+  document.getElementById("table1").style.display ="none"
+  document.getElementById("divlistban").style.display =""
+
+}
 
 
 
