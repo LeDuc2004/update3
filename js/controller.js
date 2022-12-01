@@ -50,6 +50,7 @@ controller.register = (data, dataid) => {
     data.email !== "" &&
     data.password !== "" &&
     data.confirmPassword !== ""
+    && data.password == data.confirmPassword 
   ) {
     model.register(data, dataid);
   }
@@ -109,7 +110,7 @@ function search() {
 
   function btnChat() {
 
-  
+    
     document.getElementById("tableIcon").style.display = "none";
     let valueInput = document.getElementById("infoInput").value;
   
@@ -159,7 +160,7 @@ function search() {
       model.saveChat(
         valueInput,
         auth.currentUser.displayName,
-        new Date().toLocaleString(),
+        `${new Date().getHours()}:${new Date().getMinutes()}`,
         `${localStorage.getItem("bothEmail")}`,
         `${localStorage.getItem("bothEmailReverse")}`
       );
@@ -443,7 +444,12 @@ function blueborder() {
     }
   });
 }
-function takeInfoObj(email, i) {
+function takeInfoObj(email, i,name,nameuser) {
+  console.log(nameuser);
+  console.log(name);
+document.getElementById("namechati").innerHTML = nameuser
+document.getElementById("emailchati").innerHTML = email
+document.querySelector("#title .avatar").innerHTML = name
 
     let getfriend = document.querySelectorAll(".friend");
   getfriend.forEach((item) => {

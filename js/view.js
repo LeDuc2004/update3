@@ -93,10 +93,12 @@ view.renderList = (listChat) => {
     if (listChat[i].message.owner == firebase.auth().currentUser.email) {
       result += `
       <div class="ok" >
+      
       <div class="contentMeCha">
-      <div class="time">${listChat[i].message.time}</div>
-      <div class="nameperson">${listChat[i].message.content.nameuser}</div>
+      <div id="contentMe">
       <div class="contentMe">${listChat[i].message.content.text}</div>
+      <div class="time">${listChat[i].message.time}</div>
+      </div>
       </div>
       </div>
 
@@ -104,10 +106,13 @@ view.renderList = (listChat) => {
     } else {
       result += `
        <div class="ok" >
+       
        <div class="contentBotCha">
-      <div class="time">${listChat[i].message.time}</div>
-      <div class="nameBoss">${listChat[i].message.content.nameuser}</div>
+       <div id="contentBoss">
       <div class="contentBoss">${listChat[i].message.content.text}</div>
+      <div class="time1">${listChat[i].message.time}</div>
+
+      </div>
       </div>
       </div>
        `;
@@ -134,10 +139,8 @@ view.renderThemBan = (list, list1) => {
     if (list[i].idName.email !== firebase.auth().currentUser.email) {
       result += `
       <div class="friend1">
-      <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${list[
-        i
-      ].idName.Name.charAt(0)}</div>
-      <div style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
+      <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${list[i].idName.Name.charAt(0)}</div>
+      <div  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
       <div class="nameFriend1">${list[i].idName.username}</div>
       <div class="lastChat1">${list[i].idName.email}</div>
       </div>
@@ -217,9 +220,9 @@ view.rederListFriend = (result) => {
   let renderchokhac = "";
   for (let i = 0; i < result.length; i++) {
     if (result[i].idName.currentEmail == auth.currentUser.email) {
-      renderchokhac += ` <div id="friendnone${i}"  class="friend" onclick="takeInfoObj('${result[i].idName.email}',${i})" >
+      renderchokhac += ` <div id="friendnone${i}"  class="friend" onclick="takeInfoObj('${result[i].idName.email}',${i},'${result[i].idName.Name.charAt(0)}','${result[i].idName.username}')" >
         <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${result[i].idName.Name.charAt(0)}</div>
-        <div style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
+        <div  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
         <div class="nameFriend">${result[i].idName.username}</div>
         <div class="lastChat">${result[i].idName.email}</div>
         </div>
@@ -230,9 +233,9 @@ view.rederListFriend = (result) => {
 
     if (auth.currentUser.email == result[i].idName.email) {
       renderchokhac += `
-          <div id="friendnone${i}" class="friend" onclick="takeInfoObj('${result[i].idName.currentEmail}',${i})">
+          <div id="friendnone${i}" class="friend" onclick="takeInfoObj('${result[i].idName.currentEmail}',${i},'${result[i].idName.tenchunhan.charAt(0)}','${result[i].idName.tenchunhan}')">
           <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${result[i].idName.tenchunhan.charAt(0)}</div>
-          <div style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
+          <div  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
           <div class="nameFriend">${result[i].idName.tenchunhan}</div>
           <div class="lastChat">${result[i].idName.currentEmail}</div>
           </div>

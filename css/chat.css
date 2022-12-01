@@ -115,9 +115,19 @@
     height: 10vh;
     text-align: center;
     border: 0.8px solid  lightgray;
+    display: flex;
+
  
 
 
+}
+#baoten{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 5px;
+
+ 
 }
 #chat{
     height: 7vh;
@@ -207,10 +217,13 @@ width: 100%;
 
    
 }
+.friend{
+ border-bottom: 1px solid lightgray;
 
+}
 ::-webkit-scrollbar{
     
-    width: 8px;
+    width: 0.1px;
     background-color: rgba(128, 128, 128, 0.15);
 }
 ::-webkit-scrollbar-thumb{
@@ -222,21 +235,35 @@ width: 100%;
 
 .contentMe{
 cursor: pointer;
-background-color: #e5efff;
 display: flex;
 word-break: break-all;
 max-width: max-content;
-padding: 5px  10px;
-border-radius: 10px;
-max-width: 45%;
 text-align: justify;
-box-shadow: 0 1px 2px lightgray
+min-width: 60px;
+flex-direction: row-reverse;
+user-select: text;
+font-size: .9375rem;
+}
+#contentMe{
+ background-color: #e5efff;  
+ box-shadow: 0 1px 2px lightgray ;
+ position: relative;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    max-width: 45%;
+}
+.nameperson{
+    display: flex;
+    flex-direction: row-reverse
 }
 .contentBotCha{
 margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 margin: 5px;
+flex-direction: row;
 }
 .contentMeCha{
 display: flex;
@@ -244,21 +271,41 @@ flex-direction: column;
 align-items: flex-end;
 margin: 5px;
 }
+#contentBoss{
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px lightgrey;
+    position: relative;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    max-width: 45%;
+}
 .contentBoss{
-cursor: pointer;
-background-color: #ffffff;
-display: flex;
-width: max-content;
-padding: 5px  10px;
-border-radius: 10px;
-max-width: 45%;
-text-align: justify;
-margin-bottom: 10px;
-box-shadow: 0 1px 2px var(--self-bubble-chat-shadow);
+    display: flex;
+    cursor: pointer;
+
+    word-break: break-all;
+    max-width: max-content;
+    text-align: justify;
+    min-width: 60px;
+
+    user-select: text;
+    font-size: .9375rem;
 
 }
 .time{
-    align-self: center;
+    display: flex;
+    font-size: .8125rem;
+    color: gray;
+    margin-top: 5px;
+}
+.time1{
+    display: flex;
+    font-size: .8125rem;
+    color: gray;
+    margin-top: 5px;
+    flex-direction: row-reverse;
 }
 #btnChat{
     position: fixed;

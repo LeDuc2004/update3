@@ -29,7 +29,7 @@ conponent.registerPage = `
               <div >
                 <i  style="cursor:pointer ;top: 328px;" id="iconClose" onclick="showConfirmPassword()" class="fa-solid fa-eye"></i>
                 <input name="confirmPassword"   id="remk" type="password" placeholder="xác nhận mật khẩu"><br>
-               <em><span  style="color:red;top:350px;left:80px" id="spanremk"></span> </em>
+               <em><span  style="color:red;top:360px;left:80px" id="spanremk"></span> </em>
                </div> 
             
            
@@ -91,7 +91,7 @@ conponent.wellcomePage = `
            <div style="margin-left: 20px;margin-top: 15px;font-weight: 500;font-size:16px; " >Thêm bạn</div>
            <div id="headAddi" onclick="offTableInfo()"><i class="fa-solid fa-x"></i></div>
            </div>
-            
+            title
             <div><input id="blueborder1" style="border-bottom: 1px solid blue;padding-left:10px" type="email" oninput="blueborder1()" placeholder="Tên hoặc email..."></div><br>
             <div id="maybeyouknow" style="diplay:"><i class="fa-solid fa-user-astronaut"></i> Có thể bạn quen</div>
             <div id="listRecommet">
@@ -158,7 +158,13 @@ conponent.wellcomePage = `
         </div>
         
         <div id="table1" style="display:block" onclick="clickevw()">
-          <div id="title" style="display: flex; justify-content: space-between"></div>
+          <div id="title" style="display: flex;">
+          <div class="avatar"  style="width:48px;height:48px;margin-left: 12px;margin-bottom: 20px;margin-top:1vh"></div>
+          <div id="baoten">
+          <div id="namechati" style="display:flex;justify-self:end ;margin-left:2px;font-weight: 500;"></div>
+          <div id="emailchati" style="margin-top: 5px;font-size: 15px;color: gray;"></div>
+          </div>
+          </div>
           <div id="spaceChat"  class="list-content"></div>
 
         
