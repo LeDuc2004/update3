@@ -67,12 +67,13 @@ model.login = async (data) => {
     view.setErrorMessage("spanmk", "* Tài khoản hoặc mật khẩu không đúng *");
   }
 };
-model.saveChat = (data, dataname, time ,bothEmail,bothEmailReverse) => {
+model.saveChat = (data, dataname,mltime, time ,bothEmail,bothEmailReverse) => {
 
   const firestoreQueries = async () => {
 
   let checkMassage = {
     message: {
+      mltime,
       time: time,
       owner: firebase.auth().currentUser.email,
       content: {

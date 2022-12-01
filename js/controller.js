@@ -160,6 +160,7 @@ function search() {
       model.saveChat(
         valueInput,
         auth.currentUser.displayName,
+        `${new Date().getMilliseconds()}`,
         `${new Date().getHours()}:${new Date().getMinutes()}`,
         `${localStorage.getItem("bothEmail")}`,
         `${localStorage.getItem("bothEmailReverse")}`
