@@ -446,8 +446,7 @@ function blueborder() {
   });
 }
 function takeInfoObj(email, i,name,nameuser) {
-  console.log(nameuser);
-  console.log(name);
+
 document.getElementById("namechati").innerHTML = nameuser
 document.getElementById("emailchati").innerHTML = email
 document.querySelector("#title .avatar").innerHTML = name
@@ -522,6 +521,7 @@ function tranform() {
   let listChat = document.getElementById("spaceChat");
   listChat.scrollTop = listChat.scrollHeight;
 }
+
 
 
 

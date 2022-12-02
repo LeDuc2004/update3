@@ -933,7 +933,7 @@ border-radius: 5px;
     }
     #tronchat{
         
-    
+        z-index: 2;
         position: fixed;
         left: 50px;
         border-radius:200px ;
@@ -941,12 +941,12 @@ border-radius: 5px;
     }
     #tronchat:hover{
         color: #0091ff;
-        animation: lantran linear .2s,lantran1 linear .2s forwards, bigger linear .3s forwards;
+        animation: lantran linear .5s,lantran1 linear .2s forwards, bigger linear .3s forwards;
 
     
     }
     #tronuser{
-    
+        z-index: 1;
         position: fixed;
         right: 50px;
         border-radius:200px ;
@@ -954,22 +954,17 @@ border-radius: 5px;
     
     #tronuser:hover{
         color: #0091ff;
-        animation: lantran linear .2s,lantran1 linear .2s forwards, bigger linear .2s forwards;
+        animation: lantran linear .5s,lantran1 linear .2s forwards, bigger linear .2s forwards;
         
     
     
     }
  
-    @keyframes lantran{
-    to{
-        
-        background-color: lightgray;
-    }
-    }
+
     @keyframes lantran1{
         to{
             
-            padding:0 90px;
+            margin:0 35%;
         }
         }
     
@@ -2036,7 +2031,7 @@ color:gray;
     
         position:relative;
         top:20px;
-        margin-right:25px ;
+        margin-right:0px ;
         font-size: 20px;
         height: 30px;
         width: 30px;
@@ -2101,7 +2096,7 @@ color:gray;
 
 #seacH{
     position: relative;
-    width: 90%;
+    max-width: 10%;
     height: 100%;
 }
 
@@ -2117,7 +2112,7 @@ color:gray;
     margin-top: 17px;
     margin-left: 15px;
 
-    min-width: 80%;
+    min-width: 60%;
     height: 35px;
     background-color: #eeeff2;
     border-radius: 5px;

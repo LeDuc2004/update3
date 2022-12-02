@@ -86,3 +86,11 @@ border-color: #2f86eb;
     right: 32px;
     z-index: 5;
 }
+@media only screen and (max-width:912px) {
+    #toast{
+        position: fixed ;
+        top: 0px;
+        right: 0px;
+        z-index: 5;
+    }
+}

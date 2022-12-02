@@ -200,7 +200,23 @@ position: fixed;
     z-index: 5;
     animation: growth linear 0.3s;
     box-sizing: border-box;
-    margin: 15vh 2.5vh;
+    margin: 15vh 1.5vh;
+}
+}
+@media only screen and (max-width:280px){
+  .modal__body {
+    --growth-from: 0.1;
+
+    --growth-to: 1;
+    position: fixed;
+    width: 320px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 5;
+    animation: growth linear 0.3s;
+    box-sizing: border-box;
+    margin: 15vh 0vh;
 }
 }
 

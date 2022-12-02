@@ -244,4 +244,11 @@ view.rederListFriend = (result) => {
     }
   }
   document.getElementById("listChating").innerHTML = renderchokhac;
+  locban()
+
 };
+function locban() {
+
+ let listemail = document.querySelector("#listChating .lastChat").innerText
+ console.log(listemail);
+}
