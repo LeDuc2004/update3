@@ -20,6 +20,14 @@ window.onload = () => {
       model.getChat()
      
     });
+    firebase
+    .firestore()
+    .collection("idName")
+    .onSnapshot((docs) => {
+
+      model.getIdName()
+     
+    });
   firebase
     .firestore()
     .collection("idName")

@@ -167,6 +167,7 @@ model.getIdName = async () => {
    
   } catch (error) {}
 };
+
 model.rederListFriend = async () => {
   try {
     let response = await firebase

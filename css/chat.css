@@ -1003,7 +1003,7 @@ border-radius: 5px;
         border: 0.5px solid lightgray;
         background-color: #ffffff;
         position: fixed;
-        max-height: 100px;
+        max-height: 65px;
         bottom: 0;
     }
     
@@ -1070,7 +1070,7 @@ border-radius: 5px;
         border: 0.5px solid  #e6e7eb;
         height: 75.3vh;
         width: 60%;
-        margin-bottom: 99px;
+ 
         
         
     }
@@ -1961,7 +1961,7 @@ color:gray;
         border-top: 1px solid blue;
         background-color: white;
         outline: none;
-        max-width: 64%;
+        max-width: 63%;
         height: 21px;
     
        
@@ -2129,6 +2129,8 @@ color:gray;
 
 
 }
+
+
 
 /* @media only screen and (max-width:414px){
     #valueInputForm span{
