@@ -195,7 +195,7 @@ conponent.wellcomePage = `
                 ><i class="fa-solid fa-paper-plane"></i></div>
           </div>
         </div>
-        <div id="footerlistban">
+        <div id="footerlistban" style="display:none">
         <div id="tronchat" ><i class="fa-solid fa-comment"></i></div>
         <div id="tronuser" ><i class="fa-solid fa-user"></i></div>
         </div>
