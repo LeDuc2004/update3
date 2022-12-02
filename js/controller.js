@@ -518,7 +518,10 @@ document.addEventListener("history.back()",(e)=>{
       }
     
         });
-
+function tranform() {
+  let listChat = document.getElementById("spaceChat");
+  listChat.scrollTop = listChat.scrollHeight;
+}
 
 
 

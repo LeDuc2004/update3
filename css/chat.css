@@ -4,6 +4,74 @@
     overflow-y: hidden;
     overflow-x: hidden;
 }
+#footerlistban{
+    border-top: 1px solid lightgray;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(239, 232, 232);
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#footerlistban i{
+    
+    font-size: 25px;
+    margin-top: 14px;
+   
+
+}
+#tronchat{
+    
+
+   
+    border-radius:200px ;
+    
+}
+#tronchat:hover{
+
+    animation: lantran linear .2s;
+    animation: lantran1 linear .2s forwards;
+
+}
+#tronuser{
+
+    
+    border-radius:200px ;
+}
+
+#tronuser:hover{
+    animation: lantran linear .2s;
+    animation: lantran1 linear .2s forwards;
+
+
+}
+#footerlistban i:hover{
+    color: #0091ff;
+    animation: bigger linear .3s forwards;
+}
+@keyframes lantran{
+to{
+    background-color: lightgray;
+    
+}
+}
+@keyframes lantran1{
+    to{
+        
+        padding:0 30px;
+    }
+    }
+
+@keyframes bigger{
+    from{
+        font-size: 25px;
+    }
+    to{
+        font-size: 30px;
+    }
+}
 #arowleft{
     display: none;
 }
@@ -156,10 +224,11 @@ margin-left: 5px;
       
 }
 #valueInputForm {
-    border: 0.5px solid lightgray;
+    border: 0.5px solid #fff !important;
     background-color: #ffffff;
     position: relative;
     height: calc(100vh - 85.3vh);
+    
 }
 #spaceChat{
     background-color:rgb(238, 234, 234);
@@ -921,6 +990,10 @@ border-radius: 5px;
         
      
     }
+ 
+    .bonl{
+        border-bottom: 0.5px solid lightgray;
+    }
 
     #valueInputForm i {
       align-self: center;
@@ -996,6 +1069,7 @@ border-radius: 5px;
         border: 0.5px solid  #e6e7eb;
         height: 75.3vh;
         width: 60%;
+        margin-bottom: 99px;
         
         
     }

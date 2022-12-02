@@ -222,7 +222,7 @@ view.rederListFriend = (result) => {
     if (result[i].idName.currentEmail == auth.currentUser.email) {
       renderchokhac += ` <div id="friendnone${i}"  class="friend" onclick="takeInfoObj('${result[i].idName.email}',${i},'${result[i].idName.Name.charAt(0)}','${result[i].idName.username}')" >
         <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${result[i].idName.Name.charAt(0)}</div>
-        <div  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
+        <div class="bonl"  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
         <div class="nameFriend">${result[i].idName.username}</div>
         <div class="lastChat">${result[i].idName.email}</div>
         </div>
@@ -235,7 +235,7 @@ view.rederListFriend = (result) => {
       renderchokhac += `
           <div id="friendnone${i}" class="friend" onclick="takeInfoObj('${result[i].idName.currentEmail}',${i},'${result[i].idName.tenchunhan.charAt(0)}','${result[i].idName.tenchunhan}')">
           <div class="avatar" style="max-width:50px;width:20%;margin:11px 0px">${result[i].idName.tenchunhan.charAt(0)}</div>
-          <div  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
+          <div class="bonl"  style="display: flex;flex-direction: column;justify-content: center;width:80%;margin-left: 10px;">
           <div class="nameFriend">${result[i].idName.tenchunhan}</div>
           <div class="lastChat">${result[i].idName.currentEmail}</div>
           </div>
