@@ -2,7 +2,9 @@ window.onload = () => {
 
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      
       view.setScreenActive("wellcomePage");
+      document.getElementById("body").style = ""
       model.getChat()
       localStorage.setItem("bothEmail","loichaocuazalo")
      

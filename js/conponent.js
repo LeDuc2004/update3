@@ -133,7 +133,7 @@ conponent.wellcomePage = `
         
         <div id="seachFriends">
           <div id="seacH"><input id="blueborder" type="text" placeholder="Tìm kiếm" oninput="blueborder()" ><i class="fa-solid fa-magnifying-glass"></i></div>
-          <div id="addFriend" onclick="tableInfoSize()" ><i class="addFriend" class="fa-solid fa-user-plus"></i></div>
+          <div id="addFriend" onclick="tableInfoSize()" ><i  class="fa-solid fa-user-plus"></i></div>
         </div>
         
         <div id="tatca" >Tất cả</div>
