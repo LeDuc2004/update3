@@ -8,6 +8,7 @@ window.onload = () => {
       
       view.setScreenActive("wellcomePage");
       loadinglogin()
+      document.getElementById("yourself").style.display = "none"
       model.getChat()
       localStorage.setItem("bothEmail","loichaocuazalo")
       

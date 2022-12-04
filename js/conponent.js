@@ -85,7 +85,7 @@ conponent.wellcomePage = `
         <div class="modal__overlay" onclick="offTableInfo()"></div>
         
         <div class="modal__body">
-          <div class="modal__inner">
+          <div class="modal__inner" id="modal__inner" >
 
            <div id="headAdd">
            <div style="margin-left: 20px;margin-top: 15px;font-weight: 500;font-size:16px; " >Thêm bạn</div>
@@ -99,14 +99,30 @@ conponent.wellcomePage = `
 
 
            </div>
+            </div>
+           <div class="modal__inner" id="modal__inner1"  style="display:flex">
+           <div id="headAdd">
+           <div style="min-width:140px;margin-top:15px;font-weight: 500;margin-left:20px">Thông tin tài khoản</div>
+           <div style="margin-left:170px" id="headAddi" onclick="offTableInfo()"><i class="fa-solid fa-x"></i></div>
+           </div>
+           <div style="position: relative; display: table; margin: auto;" ><img style=" width: 360px;height: 130px;object-fit: cover;" src="./imge/default.jpg" alt=""></div>
+          <div style="width:100px;margin-left:40px;margin-top:-30px;z-index: 2;"><div id="yourselfidname" class="avatar" style="width:60px;border: 2px solid #fff;height:60px;line-height: 2.4;"></div></div>
+          <div id="yourselfname" style="font-weight: 500;margin-left:5px"></div>
+          <div style="margin-top:20px;font-weight: 500;margin-left:-200px">Thông tin cá nhân</div>
+          <div style="display:flex;">
+          <div style="margin-top:10px;color:gray;margin-right:40px">email</div>
+          <div id="yourselfemail" style="margin-top:10px"></div>
+          </div>
+          <button onclick="signout()" style="margin-top:100px">Đăng xuất</button>
           </div>
         </div>
         </div>
+
         <div id="divthongtin">
           <div id="taikhoan" style="display: none;">
             <div id="namedn"></div>
             <hr style="margin: 0; opacity:0.4 ;">
-            <div style="padding: 5px;font-size: 15px;">Hồ sơ của bạn</div>
+            <div onclick="hosocuaban()" style="padding: 5px;font-size: 15px;">Hồ sơ của bạn</div>
             <div style="padding: 5px;font-size: 15px;">Cài đặt</div>
             <hr style="margin: 0; opacity:0.4 ;">
             <div style="margin:5px 0 ;padding:5px 5px;font-size: 15px;" id="tendn3" onclick="signout()">Đăng xuất</div>
@@ -138,12 +154,30 @@ conponent.wellcomePage = `
         
         <div id="tatca" >Tất cả</div>
         
-        <div id="listChating">
+        <div id="listChating" style="display:">
         
            
 
 
         </div>
+        <div id="yourself">
+                   <div class="modal__inner" id="modal__inner1"  style="display:flex">
+           <div id="headAdd">
+           <div style="min-width:140px;margin-top:15px;font-weight: 500;margin-left:20px">Thông tin tài khoản</div>
+           <div style="margin-left:170px" id="headAddi" onclick="offTableInfo()"></div>
+           </div>
+           <div style="position: relative; display: table; margin: auto;" ><img style=" width: 360px;height: 130px;object-fit: cover;" src="./imge/default.jpg" alt=""></div>
+          <div style="width:100px;margin-left:40px;margin-top:-30px;z-index: 5;"><div class="avatar" id="yourselfidname1" style="width:60px;border: 2px solid #fff;height:60px;line-height: 2.4;"></div></div>
+          <div id="yourselfname1" style="font-weight: 500;margin-left:5px"></div>
+          <div style="margin-top:20px;font-weight: 500;margin-left:-200px">Thông tin cá nhân</div>
+          <div style="display:flex">
+          <div style="margin-top:10px;color:gray;margin-right:40px">email</div>
+          <div id="yourselfemail1" style="margin-top:10px"></div>
+          </div>
+          <button onclick="signout()" style="margin-top:100px">Đăng xuất</button>
+          </div>
+        </div>
+     
         
         </div>
         
@@ -208,8 +242,8 @@ conponent.wellcomePage = `
           </div>
         </div>
         <div id="footerlistban" style="display:none">
-        <div id="tronchat" ><i class="fa-solid fa-comment"></i></div>
-        <div id="tronuser" ><i class="fa-solid fa-user"></i></div>
+        <div id="tronchat" onclick="tronchat()" ><i class="fa-solid fa-comment"></i></div>
+        <div id="tronuser" onclick="tronuser()" ><i class="fa-solid fa-user"></i></div>
         </div>
            
         </div> 

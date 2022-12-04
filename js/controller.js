@@ -409,6 +409,9 @@ function innerInput39() {
 }
 function tableInfoSize() {
   document.getElementById("modal").style.display = "";
+  document.querySelector("#modal__inner").style.display =""
+  document.querySelector("#modal__inner1").style.display ="none"
+
 }
 function offTableInfo() {
   document.getElementById("modal").style.display = "none";
@@ -540,6 +543,23 @@ function loadingspace() {
   document.getElementById("loadingspace").style.display = "none"
   
   }, 2000);
+}
+function tronchat() {
+  document.getElementById("listChating").style.display =""
+  document.getElementById("yourself").style.display ="none"
+
+}
+function tronuser() {
+  document.getElementById("listChating").style.display ="none"
+  document.getElementById("yourself").style.display =""
+
+}
+function hosocuaban() {
+  document.getElementById("modal").style.display =""
+  document.querySelector("#modal__inner").style.display ="none"
+  document.querySelector("#modal__inner1").style.display =""
+  document.getElementById("taikhoan").style.display = "none"
+
 }
 
 

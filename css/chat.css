@@ -101,6 +101,7 @@
     min-width: 344px;
     height: 100vh;
     animation: smooth linear 0.3s;
+    display: block;
 
 }
 
@@ -464,7 +465,7 @@ border-radius: 5px;
 #listChating{
     display: flex;
     flex-direction:column ;
-
+    animation: smooth linear 0.3s;
     min-width: 100%;
     height: 89vh;
     overflow-y: scroll;
@@ -549,6 +550,7 @@ border-radius: 5px;
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5;
+    text-align: center;
 }
 #emailchati{
     color: gray;
@@ -598,7 +600,8 @@ border-radius: 5px;
    }
    #contable{
    position: relative;
-   left: -100px;
+   left: -200px;
+   text-align: center;
    }
    #divlistban{
     background-color: #ffffff;
@@ -681,6 +684,9 @@ border-radius: 5px;
 
 }
 @media only screen and (max-width:1280px){
+    #yourself{
+        display: none;
+    }
     #valueInputForm span{
         background-color: white;
         border-top: 1px solid blue;
@@ -799,6 +805,7 @@ border-radius: 5px;
 
 }
 @media only screen and (max-width:1024px){
+
     #valueInputForm span{
         background-color: white;
         border-top: 1px solid blue;
@@ -919,6 +926,9 @@ border-radius: 5px;
 
 }
  @media only screen and (max-width:912px) {
+    #yourself{
+        display: block;
+    }
     #table{
      display: none;
     }
@@ -2150,525 +2160,11 @@ color:gray;
 
 
 
-/* @media only screen and (max-width:414px){
-    #valueInputForm span{
-        background-color: white;
-        border-top: 1px solid blue;
-        padding-top: 9px;
-        min-width: 20px;
-        height: 52px;
-        align-items: flex-end;
-        
-     
-    }
-    #spaceChat{
-        width: 100%;
-    }
-    #plubss{
-        margin-left: 58%;
-        padding-left: 0px;
-    }
-    #valueInputForm input{
-    
-        flex:1 1 auto;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: justify;
-        padding: 20px;              
-        border: white;
-        border-top: 1px solid blue;
-        background-color: white;
-        outline: none;
-        max-width: 53%;
-        height: 21px;
-    
-       
-    }
-   #table{
-    display: none;
-   }
-   #table1{
-    min-width:calc(100% - 64px);
-   }
-   #divlistban{
-    background-color: #ffffff;
-    width: calc(100% - 64px );
-    height: 100vh;
-
-}
-#divlistban{
-    display: flex;
-    flex-direction: column;
+#yourself{
+    animation: smooth linear 0.3s;
     width: 100%;
+    height: 89vh;
 }
-#seachFriends{
-    display: flex;
-    height: 55px;
-    width: 100%;
-}
-#seacH{
-    width: 75%;
-}
-#seacH input{
-    margin-top: 17px;
-    margin-left: 15px;
-
-    min-width: 80%;
-    height: 32px;
-    background-color: #eeeff2;
-    border-radius: 5px;
-    border: none;
-    padding-left: 33px;
-    outline: none;
-}
-#taikhoan{
-    
-    border-radius: 4px;
-    position: fixed;
-    background-color: #ffffff;
-    left: 17%;
-    width: 50%;
-    top: 8%;
-    height: 162px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
-}
-#taikhoan div{
-    user-select: none;
-    background-color: #ffffff;
-
-}
-
-
-
-}
-@media only screen and (max-width:412px){
-    #valueInputForm span{
-        background-color: white;
-        border-top: 1px solid blue;
-        padding-top: 9px;
-        min-width: 20px;
-        height: 52px;
-        align-items: flex-end;
-        
-     
-    }
-    #spaceChat{
-        width: 100%;
-    }
-    #plubss{
-        margin-left:56%;
-        padding-left: 0px;
-    }
-    #valueInputForm input{
-    
-        flex:1 1 auto;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: justify;
-        padding: 20px;              
-        border: white;
-        border-top: 1px solid blue;
-        background-color: white;
-        outline: none;
-        max-width: 50%;
-        height: 21px;
-    
-       
-    }
-   #table{
-    display: none;
-   }
-   #table1{
-    min-width:calc(100% - 64px);
-   }
-   #divlistban{
-    background-color: #ffffff;
-    width: calc(100% - 64px );
-    height: 100vh;
-
-}
-#divlistban{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-#seachFriends{
-    display: flex;
-    height: 55px;
-    width: 100%;
-}
-#seacH{
-    width: 75%;
-}
-#seacH input{
-    margin-top: 17px;
-    margin-left: 15px;
-
-    min-width: 80%;
-    height: 32px;
-    background-color: #eeeff2;
-    border-radius: 5px;
-    border: none;
-    padding-left: 33px;
-    outline: none;
-}
-#taikhoan{
-    
-    border-radius: 4px;
-    position: fixed;
-    background-color: #ffffff;
-    left: 17%;
-    width: 50%;
-    top: 8%;
-    height: 162px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
-}
-#taikhoan div{
-    user-select: none;
-    background-color: #ffffff;
-
-}
-
-
-
-}
-@media only screen and (max-width:375px){
-    #valueInputForm span{
-        background-color: white;
-        border-top: 1px solid blue;
-        padding-top: 9px;
-        min-width: 20px;
-        height: 52px;
-        align-items: flex-end;
-        
-     
-    }
-    #spaceChat{
-        width: 100%;
-    }
-    #plubss{
-        margin-left: 58%;
-        padding-left: 0px;
-    }
-    #valueInputForm input{
-    
-        flex:1 1 auto;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: justify;
-        padding: 20px;              
-        border: white;
-        border-top: 1px solid blue;
-        background-color: white;
-        outline: none;
-        max-width: 52%;
-        height: 21px;
-    
-       
-    }
-   #table{
-    display: none;
-   }
-   #table1{
-    min-width:calc(100% - 64px);
-   }
-   #divlistban{
-    background-color: #ffffff;
-    width: calc(100% - 64px );
-    height: 100vh;
-
-}
-#divlistban{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-#seachFriends{
-    display: flex;
-    height: 55px;
-    width: 100%;
-}
-#seacH{
-    width: 70%;
-}
-#seacH input{
-    margin-top: 17px;
-    margin-left: 15px;
-
-    min-width: 80%;
-    height: 32px;
-    background-color: #eeeff2;
-    border-radius: 5px;
-    border: none;
-    padding-left: 33px;
-    outline: none;
-}
-#taikhoan{
-    
-    border-radius: 4px;
-    position: fixed;
-    background-color: #ffffff;
-    left: 20%;
-    width: 50%;
-    top: 8%;
-    height: 162px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
-}
-#taikhoan div{
-    user-select: none;
-    background-color: #ffffff;
-
-}
-
-
-
-}
-@media only screen and (max-width:360px){
-    #valueInputForm span{
-        background-color: white;
-        border-top: 1px solid blue;
-        padding-top: 9px;
-        min-width: 10px;
-        height: 52px;
-        align-items: flex-end;
-        font-size: 10px;
-     
-    }
-    #spaceChat{
-        width: 100%;
-    }
-    #plubss{
-        margin-left: 52%;
-        padding-left: 0px;
-    }
-    #valueInputForm input{
-    
-        flex:1 1 auto;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: justify;
-        padding: 20px;              
-        border: white;
-        border-top: 1px solid blue;
-        background-color: white;
-        outline: none;
-        max-width: 55%;
-        height: 21px;
-    
-       
-    }
-   #table{
-    display: none;
-   }
-   #table1{
-    min-width:calc(100% - 64px);
-   }
-   #divlistban{
-    background-color: #ffffff;
-    max-width: 10px;
-    height: 100vh;
-
-}
-   #divlistban{
-    background-color: #ffffff;
-    width: calc(100% - 64px );
-    height: 100vh;
-
-}
-#divlistban{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-}
-#seachFriends{
-    display: flex;
-    height: 55px;
-    width: 100%;
-}
-#seacH{
-    width: 0%;
-}
-#seacH input{
-    margin-top: 17px;
-    margin-left: 15px;
-
-    min-width: 30%;
-    height: 32px;
-    background-color: #eeeff2;
-    border-radius: 5px;
-    border: none;
-    padding-left: 33px;
-    outline: none;
-}
-#taikhoan{
-    
-    border-radius: 4px;
-    position: fixed;
-    background-color: #ffffff;
-    left: 18%;
-    width: 50%;
-    top: 8%;
-    height: 162px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
-}
-#taikhoan div{
-    user-select: none;
-    background-color: #ffffff;
-
-}
-#divthongtin{ 
-    background-color: #0091ff;
-    min-width: 64px;
-   height: 100vh;
-
-
-}
-#divthongtin i{
-    color: #ffffff;
-    background-color: #0091ff;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    
-
-}
-#divthongtin div{
-    cursor: pointer;
-
-}
-
-
-
-}
-@media only screen and (max-width:280px){
-    #valueInputForm span{
-        background-color: white;
-        border-top: 1px solid blue;
-        padding-top: 9px;
-        min-width: 10px;
-        height: 52px;
-        align-items: flex-end;
-        font-size: 10px;
-     
-    }
-    #spaceChat{
-        width: 100%;
-    }
-    #plubss{
-        margin-left: 48%;
-        padding-left: 0px;
-    }
-    #valueInputForm input{
-    
-        flex:1 1 auto;
-        word-wrap: break-word;
-        word-break: break-all;
-        text-align: justify;
-        padding: 20px;              
-        border: white;
-        border-top: 1px solid blue;
-        background-color: white;
-        outline: none;
-        max-width: 50%;
-        height: 21px;
-    
-       
-    }
-   #table{
-    display: none;
-   }
-   #table1{
-    min-width:calc(100% - 64px);
-   }
-   #divlistban{
-    background-color: #ffffff;
-    max-width: 10px;
-    height: 100vh;
-
-}
-   #divlistban{
-    background-color: #ffffff;
-    width: calc(100% - 64px );
-    height: 100vh;
-
-}
-#divlistban{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-}
-#seachFriends{
-    display: flex;
-    height: 55px;
-    width: 100%;
-}
-#seacH{
-    width: 0%;
-}
-#seacH input{
-    margin-top: 17px;
-    margin-left: 15px;
-
-    min-width: 30%;
-    height: 32px;
-    background-color: #eeeff2;
-    border-radius: 5px;
-    border: none;
-    padding-left: 33px;
-    outline: none;
-}
-#taikhoan{
-    
-    border-radius: 4px;
-    position: fixed;
-    background-color: #ffffff;
-    left: 23%;
-    width: 50%;
-    top: 8%;
-    height: 162px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) ;
-}
-#taikhoan div{
-    user-select: none;
-    background-color: #ffffff;
-
-}
-#divthongtin{ 
-    background-color: #0091ff;
-    min-width: 64px;
-   height: 100vh;
-
-
-}
-#divthongtin i{
-    color: #ffffff;
-    background-color: #0091ff;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    
-
-}
-#divthongtin div{
-    cursor: pointer;
-
-}
-
-
-
-} */
  
  
 

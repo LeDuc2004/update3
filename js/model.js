@@ -65,7 +65,9 @@ model.login = async (data) => {
     
     
     view.setScreenActive("wellcomePage");
+    document.getElementById("yourself").style.display = "none"
     loadinglogin()
+
     localStorage.setItem("signin","id")
   } catch (error) {
     view.setErrorMessage("spanmk", "* Tài khoản hoặc mật khẩu không đúng *");

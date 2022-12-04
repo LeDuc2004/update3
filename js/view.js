@@ -136,6 +136,16 @@ view.renderIdName = (list) => {
     if (list[i].idName.email == firebase.auth().currentUser.email) {
       document.getElementById("idName").innerHTML = list[i].idName.Name;
       document.getElementById("namedn").innerHTML = list[i].idName.username;
+
+      document.getElementById("yourselfidname").innerHTML = list[i].idName.Name;
+      document.getElementById("yourselfname").innerHTML = list[i].idName.username;
+      document.getElementById("yourselfemail").innerHTML = firebase.auth().currentUser.email;
+      document.getElementById("yourselfidname1").innerHTML = list[i].idName.Name;
+      document.getElementById("yourselfname1").innerHTML = list[i].idName.username;
+      document.getElementById("yourselfemail1").innerHTML = firebase.auth().currentUser.email;
+
+
+
     }
   }
 };

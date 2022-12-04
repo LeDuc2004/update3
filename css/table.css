@@ -71,7 +71,7 @@ position: fixed;
   animation: growth linear 0.3s;
   margin: 10vh 72vh;
   box-sizing: border-box;
-  
+
 }
 @media only screen and (max-width:912px) {
   .modal__body {
@@ -150,7 +150,7 @@ position: fixed;
     z-index: 5;
     animation: growth linear 0.3s;
     box-sizing: border-box;
-    margin: 15vh 4vh;
+    margin: 15vh 2vh;
 }
 }
 @media only screen and (max-width:360px){
