@@ -18,10 +18,15 @@ model.register = async (data,dataid) => {
       data.email,
       data.password
     );
+    
      
 
 
     ShowSuccessToast()
+    setTimeout(() => {
+      localStorage.setItem("signin","id")
+      
+      }, 1000);
     const idname = async () => {
       try {
         
@@ -60,8 +65,8 @@ model.login = async (data) => {
       data.email,
       data.password
     );
-
-
+    
+    
     view.setScreenActive("wellcomePage");
   } catch (error) {
     view.setErrorMessage("spanmk", "* Tài khoản hoặc mật khẩu không đúng *");

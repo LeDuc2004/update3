@@ -469,6 +469,7 @@ model.getChat()
     document.getElementById("divlistban").style.display = "none"
     
   }
+
 }
 
 
@@ -502,24 +503,43 @@ function arowleft() {
   document.getElementById("divlistban").style.display =""
 
 }
-document.addEventListener("history.back()",(e)=>{
-  e.preventDefault()
-  document.getElementById("table1").style.display ="none"
-  document.getElementById("divlistban").style.display =""
-})
 
-    document.addEventListener("keydown", (e) => {
-      if(e.which == 27){
-        e.preventDefault()
 
-        document.getElementById("table1").style.display ="none"
-        document.getElementById("divlistban").style.display =""
-      }
-    
-        });
+
 function tranform() {
   let listChat = document.getElementById("spaceChat");
   listChat.scrollTop = listChat.scrollHeight;
+}
+function loading() {
+  document.getElementById("footerlistban").style.display = "none"
+  document.getElementById("loading").style.display = ""
+  
+
+  setTimeout(() => {
+  document.getElementById("loading").style.display = "none"
+  
+  }, 3000);
+}
+function loadinglogin() {
+  
+  document.getElementById("footerlistban").style.display = "none"
+  document.getElementById("loadinglogin").style.display = ""
+  
+
+  setTimeout(() => {
+  document.getElementById("loadinglogin").style.display = "none"
+  
+  }, 2000);
+}
+function loadingspace() {
+
+  document.getElementById("loadingspace").style.display = ""
+  
+
+  setTimeout(() => {
+  document.getElementById("loadingspace").style.display = "none"
+  
+  }, 2000);
 }
 
 

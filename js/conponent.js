@@ -150,11 +150,13 @@ conponent.wellcomePage = `
         
         
         <div id="table" style="display:none">
+        <div id="contable">
           <div id="chaomung">Chào mừng đến với <strong style="font-weight: 500;">Zalo PC!</strong></div>
           <div style="font-size:14px;margin-top:15px">Khám phá những tiện ích hỗ trợ làm việc và trò chuyện cùng<br><div style="margin-left: 10px;">người thân, bạn bè được tối ưu hóa cho máy tính của bạn</div></div>
           <div><img src="./imge/quick-message-onboard.3950179c175f636e91e3169b65d1b3e2.png" alt=""></div>
           <div id="chuxanh">Nhắn tin nhiều hơn, soạn thảo ít hơn</div>
           <div style="font-size:14px;margin-top:15px;text-align:center">Sử dụng tin nhắn nhanh để lưu sẵn các tin thường dùng và gửi nhanh trong hội thoại bất kỳ.</div>
+        </div>  
         </div>
         
         <div id="table1" style="display:block" onclick="clickevw()">
@@ -166,7 +168,17 @@ conponent.wellcomePage = `
           <div id="emailchati" style="margin-top: 5px;font-size: 15px"></div>
           </div>
           </div>
-          <div id="spaceChat"  class="list-content"></div>
+          <div id="spaceChat"  class="list-content">
+          <div id="loadingspace" style="display:none ;">
+          <div id="Zalo">Zalo</div>
+          <div class="loadingio-spinner-rolling-5bl2gnd1pkj">
+            <div class="ldio-g6wh5xr59iq">
+              <div></div>
+            </div>
+          </div>
+          <div style="color: rgb(92, 88, 88);">Đang tải dữ liệu...</div>
+        </div>
+          </div>
 
         
         

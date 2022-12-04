@@ -7,7 +7,7 @@ view.setScreenActive = (screenName) => {
   switch (screenName) {
     case `registerPage`:
       document.getElementById("app").innerHTML = conponent.registerPage;
-
+      
       let registerForm = document.getElementById("registerForm");
       registerForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -43,7 +43,11 @@ view.setScreenActive = (screenName) => {
       });
       break;
     case "loginPage":
+      
       document.getElementById("app").innerHTML = conponent.loginPage;
+      
+      document.getElementById("body").style = "background-image: url(./imge/thumbnail.jpg);background-color: #3362fc;"
+      
       let loginForm = document.getElementById("loginForm");
       loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -62,8 +66,9 @@ view.setScreenActive = (screenName) => {
       });
       break;
     case "wellcomePage":
-
+     document.getElementById("body").style = ""
       document.getElementById("app").innerHTML = conponent.wellcomePage;
+      
 
       model.getChat();
       model.getIdName();
@@ -75,6 +80,7 @@ view.setScreenActive = (screenName) => {
       let out = document.getElementById("tendn3");
       out.addEventListener("click", () => {
         auth.signOut();
+        localStorage.setItem("signin","")
       });
 
       break;
@@ -244,11 +250,43 @@ view.rederListFriend = (result) => {
     }
   }
   document.getElementById("listChating").innerHTML = renderchokhac;
-  locban()
+
+    
+ 
+  let arraylist =[]
+document.querySelectorAll(".lastChat").forEach((e)=>{
+  arraylist.push(e.innerText)
+  
+})
+// let arraylist1 =[]
+// for (let i = 0; i < arraylist.length-1; i++) {
+//   for (let j = i+1; j < arraylist.length; j++) {
+//     if (arraylist[i] == arraylist[j]) {
+//       arraylist1.push(arraylist[i])
+//     }
+//   }
+  
+// }
+// console.log(arraylist1);
+
+
+  document.querySelectorAll(".lastChat").forEach((e)=>{
+
+  for (let i = 0; i < arraylist.length; i++) {
+  if (e.innerText == arraylist[i] && e.innerText == arraylist[i+1]) {
+   
+        e.parentElement.parentElement.style.display ="none"
+      
+      
+    
+    
+  }
+    
+  }
+    
+  })
+ 
 
 };
-function locban() {
 
- let listemail = document.querySelector("#listChating .lastChat").innerText
- console.log(listemail);
-}
+

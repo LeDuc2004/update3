@@ -552,7 +552,7 @@ border-radius: 5px;
 }
 #emailchati{
     color: gray;
-}@media only screen and (max-width:1700px){
+}@media only screen and (max-width:2000px){
     #valueInputForm span{
         background-color: white;
         border-top: 1px solid blue;
@@ -591,6 +591,15 @@ border-radius: 5px;
     min-width:calc(100% - 64px);
     animation: smooth .5s;
    }
+   #table{
+    min-width:calc(100% - 64px);
+    animation: smooth .5s;
+
+   }
+   #contable{
+   position: relative;
+   left: -100px;
+   }
    #divlistban{
     background-color: #ffffff;
     max-width: 10px;
@@ -606,7 +615,7 @@ border-radius: 5px;
 #divlistban{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    
 }
 #seachFriends{
     display: flex;
@@ -931,9 +940,12 @@ border-radius: 5px;
        
     
     }
+    #footerlistban i:hover{
+       animation: bigger ease 0.2s forwards; 
+    }
     #tronchat{
         
-        z-index: 2;
+        
         position: fixed;
         left: 50px;
         border-radius:200px ;
@@ -941,12 +953,12 @@ border-radius: 5px;
     }
     #tronchat:hover{
         color: #0091ff;
-        animation: lantran linear .5s,lantran1 linear .2s forwards, bigger linear .3s forwards;
+        animation:lantran1 linear .2s forwards
 
     
     }
     #tronuser{
-        z-index: 1;
+      
         position: fixed;
         right: 50px;
         border-radius:200px ;
@@ -954,7 +966,8 @@ border-radius: 5px;
     
     #tronuser:hover{
         color: #0091ff;
-        animation: lantran linear .5s,lantran1 linear .2s forwards, bigger linear .2s forwards;
+        animation:lantran1 linear .2s forwards;
+
         
     
     
@@ -964,16 +977,17 @@ border-radius: 5px;
     @keyframes lantran1{
         to{
             
-            margin:0 35%;
+            margin:0 30%;
+            
         }
         }
     
     @keyframes bigger{
         from{
-            font-size: 25px;
+            font-size: 20px;
         }
         to{
-            font-size: 30px;
+            font-size: 35px;
         }
     }
     #valueInputForm span{
@@ -1854,6 +1868,15 @@ color:gray;
     }
    #table{
     display: none;
+    animation:  table linear 1s ;
+   }
+   @keyframes table {
+     from{
+        opacity: 0;
+     }
+     to{
+        opacity: 1;
+     }
    }
    #table1{
     min-width:100%;

@@ -1,17 +1,27 @@
+
 window.onload = () => {
+  
 
   firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      
-      view.setScreenActive("wellcomePage");
+    
+    if (user && localStorage.getItem("signin") == "id") {
       document.getElementById("body").style = ""
+      view.setScreenActive("wellcomePage");
+      loadinglogin()
       model.getChat()
       localStorage.setItem("bothEmail","loichaocuazalo")
+      
      
     } else {
+      
+      document.getElementById("body").style = "background-image: url(./imge/thumbnail.jpg);background-color: #3362fc;"
+      
       view.setScreenActive("loginPage");
+      
     }
+    
   });
+  
   firebase
     .firestore()
     .collection("listMessage")
