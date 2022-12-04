@@ -5,7 +5,7 @@ window.onload = () => {
   firebase.auth().onAuthStateChanged((user) => {
     
     if (user && localStorage.getItem("signin") == "id") {
-      document.getElementById("body").style = ""
+      
       view.setScreenActive("wellcomePage");
       loadinglogin()
       model.getChat()
