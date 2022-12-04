@@ -590,8 +590,9 @@ border-radius: 5px;
     }
 
    #table1{
-    min-width:calc(100% - 64px);
+    min-width:calc(100% - 63px);
     animation: smooth .5s;
+
    }
    #table{
     min-width:calc(100% - 64px);
